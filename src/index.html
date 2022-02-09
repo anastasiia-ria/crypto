@@ -1,8 +1,34 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title></title>
-</head>
-<body>
-</body>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="list-box">
+        <h3>50 most popular crypto currencies as of <span class="date"></span></h3>
+        <div id="table">
+          <ul id="rank"></ul>
+          <ul id="currency"></ul>
+          <ul id="market_cap"></ul>
+        </div>
+      </div>
+      <div id="converter">
+        <p>1 United States Dollar equals</p>
+        <p><span id="converter-rate"></span> <span id="converter-currency"></span></p>
+        <p class="date"></p>
+        <div class="form-group">
+          <input type="number" id="curr-1-input" />
+          <select class="currencies-list" id="curr-1"></select>
+        </div>
+
+        <div class="form-group">
+          <input type="number" id="curr-2-input" />
+          <select class="currencies-list" id="curr-2"></select>
+        </div>
+        <button type="button" id="convert">Convert</button>
+      </div>
+    </div>
+    <div class="showErrors"></div>
+  </body>
 </html>

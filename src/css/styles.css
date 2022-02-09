@@ -1,3 +1,7 @@
+#list-box {
+  width: 450px;
+}
+
 #table {
   display: flex;
 }

@@ -11,21 +11,16 @@
           <ul id="rank"></ul>
           <ul id="currency"></ul>
           <ul id="market_cap"></ul>
+          <ul id="rate"></ul>
         </div>
       </div>
       <div id="converter">
-        <p>1 United States Dollar equals</p>
-        <p><span id="converter-rate"></span> <span id="converter-currency"></span></p>
-        <p class="date"></p>
-        <div class="form-group">
-          <input type="number" id="curr-1-input" />
-          <select class="currencies-list" id="curr-1"></select>
-        </div>
-
-        <div class="form-group">
-          <input type="number" id="curr-2-input" />
-          <select class="currencies-list" id="curr-2"></select>
-        </div>
+        <input type="number" id="convert-value" min="0" />
+        <label>Convert from:</label>
+        <select class="currencies-list" id="curr-from"></select>
+        <label>Convert to:</label>
+        <select class="currencies-list" id="curr-to"></select>
+        <p><span id="convert-from-value"></span> <span id="convert-from-currency"></span> is <span id="convert-to-value"></span> <span id="convert-to-currency"></span></p>
         <button type="button" id="convert">Convert</button>
       </div>
     </div>
